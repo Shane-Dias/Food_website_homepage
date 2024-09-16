@@ -1,0 +1,247 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* :root{
+    CSS Variables
+} */
+#navbar{
+    /* border: 2px solid pink; */
+    display:flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+#logo{
+    background-color: #ffffffcf;
+    border-radius: 13px;
+}
+#logo img{
+    width: 70px;
+    height: 60px;
+    margin: 6px 7px;
+    padding: 6px 6px;
+    box-sizing: border-box;
+}
+#navbar::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#navbar ul{
+    list-style: none;
+    display: flex;
+    font-size: 1.2rem;
+}
+/* #navbar ul li{
+
+} */
+#navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: "Margarine", sans-serif;
+    /* border: 2px solid red; */
+    display: block;
+    padding: 7px 10px;
+    margin: 7px 14px;
+    border-radius: 17px;
+    transition: all 1s;
+
+}
+#navbar ul li a:hover{
+    background-color: white;
+    color: black;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+    height: 409px;
+}
+#home::before{
+    content:"";
+    background:url('foodbackground2.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    filter:saturate(150%);
+    /* filter:invert(10%); */
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 70%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.75;
+}
+.headings1{
+    font-size: 2.4rem;
+    padding: 10px;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+}
+.headings2{
+    font-size: 1.6rem;
+    padding: 10px;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+}
+.para{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 450;
+}
+#home h1{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: "Inter", sans-serif;
+}
+#home p{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 450;
+}
+.btn{
+    font-size: 1rem;
+    color: whitesmoke;
+    padding: 7px 10px;
+    margin: 12px 10px;
+    /* border: 2px solid white; */
+    border: none;
+    border-radius: 13px;
+    background-color: rgba(165, 42, 42);
+    cursor: pointer;
+    font-family: "Margarine", sans-serif;
+    transition: all 1s;
+}
+.btn:hover{
+    background-color: greenyellow;
+    color: darkblue;
+}
+#aboutus{
+    position: relative;
+}
+#aboutus .box{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgba(0, 0, 0, 0.244);
+    margin: 4px 7px;
+    padding: 6px 9px;
+    border-radius: 23px;
+    background-color: rgb(215, 207, 196);
+    box-shadow: 3px 3px 9px 1px #aab2e7, -3px -5px 9px 1px #aab2e7;
+}
+.box img{
+    border-radius: 12px;
+}
+#aboutus .box img{
+    width: 150px;
+    height: 150px;
+    display:block;
+    margin: auto;
+}
+#aboutus .mainbox{
+    display: flex;
+}
+#aboutus::before{
+    content: "";
+    background: linear-gradient(to bottom, #7B1FA2, #121212);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.3;
+}
+#clients{
+    position: relative;
+    /* top: 0px;
+    left: 0px; */
+}
+#clients::before{
+    content: "";
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background: url('foodbackground.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.5;
+}
+#clients .images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height: 130px;
+    width: 130px;
+    padding: 2px 5px;
+    margin: 3px 10px;
+}
+.formdata{
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 23px;
+}
+.formdata label{
+    font-size: 1.2rem;
+    font-family: "Inter", sans-serif;
+}
+.formdata input,.formdata textarea{
+    width: 30%;
+    padding: 7px 8px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+    box-shadow: 2px 8px 9px black;
+    margin-bottom: 7px;
+}
+#contactus{
+    position: relative;
+}
+#contactus::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(45deg, #e71212, #00e0e6d6);
+    z-index: -1;
+    opacity: 0.47;
+}
+footer .end{
+    background-color: black;
+    padding: 9px 44px;
+}
+footer .end p{
+    font-size: 0.9rem;
+    text-align: center;
+    color: white;
+}
+#sub_details{
+    margin-top: 9px;
+    width: 5.6rem;
+    cursor: pointer;
+    background: black;
+    color: white;
+    box-shadow: none;
+    font-size: 1rem;
+    transition: all 1s;
+}
+#sub_details:hover{
+    background: rgb(14 234 30 / 80%);
+    color: rgb(10 3 32);
+}
